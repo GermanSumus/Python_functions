@@ -1,6 +1,3 @@
-from decimal import *
-
-
 # Test user input for Conformation/Continuation
 def test():
     try:
