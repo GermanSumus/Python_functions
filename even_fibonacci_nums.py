@@ -10,7 +10,6 @@ four million, find the sum of the even-valued terms.
 
 def even_fib(integer):
     even_fibs = []
-    fib_digit = 1
     fib_tracker = [1, 2]
 
     for _ in range(integer - 2):
@@ -21,7 +20,7 @@ def even_fib(integer):
 
         if fib_tracker[1] > 4000000:
             break
-    print(even_fibs[-1])
+    print(sum(even_fibs))
 
 
 # Tests
@@ -30,4 +29,5 @@ even_fib(10)
 '''
 >>> [2, 4, 8, 34]
 '''
-even_fib(33)
+# Breaks at 4M
+even_fib(100)
